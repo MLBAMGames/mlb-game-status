@@ -1,9 +1,9 @@
-[![image](https://raw.githubusercontent.com/MLBAMGames/mlb-game-status/main/mlggames.png)](https://nhlgames.github.io/NHLGames/)
+[![image](https://raw.githubusercontent.com/MLBAMGames/mlb-game-status/main/mlggames.png)](https://mlbamgames.github.io/MLBGames/)
 
-[![GitHub release (latest by date)](https://img.shields.io/github/v/release/nhlgames/nhlgames?style=flat-square)](https://www.github.com/MLBGames/MLBGames/releases/latest)
-[![GitHub all releases](https://img.shields.io/github/downloads/NHLGames/NHLGames/total?style=flat-square)](https://www.github.com/MLBGames/MLBGames/releases/latest)
-[![Windows](https://img.shields.io/badge/plateform-windows-inactive?style=flat-square)](https://www.github.com/MLBGames/MLBGames/releases/latest)
-[![Subreddit subscribers](https://img.shields.io/reddit/subreddit-subscribers/nhl_games?style=flat-square)](https://www.reddit.com/r/mlb_games)
+[![GitHub release (latest by date)](https://img.shields.io/github/v/release/MLBAMGames/mlbgames?style=flat-square)](https://www.github.com/MLBAMGames/MLBGames/releases/latest)
+[![GitHub all releases](https://img.shields.io/github/downloads/MLBAMGames/MLBGames/total?style=flat-square)](https://www.github.com/MLBAMGames/MLBGames/releases/latest)
+[![Windows](https://img.shields.io/badge/plateform-windows-inactive?style=flat-square)](https://www.github.com/MLBAMGames/MLBGames/releases/latest)
+[![Subreddit subscribers](https://img.shields.io/reddit/subreddit-subscribers/mlb_games?style=flat-square)](https://www.reddit.com/r/mlb_games)
 
 | Service         | Check                                 | Status                                                                            |
 | --------------- | ------------------------------------- | --------------------------------------------------------------------------------- |
