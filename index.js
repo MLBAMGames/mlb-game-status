@@ -49,16 +49,14 @@ async function checkUs(server) {
 }
 
 async function getGameInfoFromMLBAM(date) {
-  const response = await axios.get(
-    "http://statsapi.web.mlb.com/api/v1/schedule",
-    {
-      params: {
-        startDate: date,
-        endDate: date,
-        expand: "schedule.game.content.media.epg",
-      },
-    }
-  );
+  const response = await axios.get("http://statsapi.mlb.com/api/v1/schedule", {
+    params: {
+      sportId: 1,
+      date,
+      hydrate: "team,linescore,game(content(summary,media(epg)))",
+      language: "en",
+    },
+  });
 
   const now = new Date();
   const games = get(response.data, "dates[0].games", []);
@@ -70,7 +68,7 @@ async function getGameInfoFromMLBAM(date) {
     const medias = get(game, "content.media.epg", []).find(
       (m) => get(m, "title") === "MLBTV"
     );
-    acc.push(get(medias, "items[0].mediaPlaybackId"));
+    acc.push(get(medias, "items[0].id"));
     return acc;
   }, []);
 
@@ -155,7 +153,8 @@ app.get("/us/ping", async (req, res) => {
 app.get("/mlbam/ping", async (req, res) => {
   try {
     const response = await axios.get(
-      "http://statsapi.web.mlb.com/api/v1/schedule"
+      "http://statsapi.mlb.com/api/v1/schedule",
+      { params: { sportId: 1 } }
     );
     if (!response.data.copyright) {
       throw new Error();
